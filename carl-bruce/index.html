@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Carl Bruce Clothing Brand — Premium African streetwear rooted in heritage. Feel Confident. Since 2005." />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Carl Bruce Clothing Brand — Feel Confident" />
+  <meta property="og:description" content="Elevated streetwear rooted in African heritage. Premium quality, cultural pride, since 2005." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/logo.png" />
+
+  <title>Carl Bruce Clothing Brand — Feel Confident</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Bebas+Neue&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ CUSTOM CURSOR ═══ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══ LOADER ═══ -->
+  <div class="loader" id="loader">
+    <img class="loader-logo" src="images/logo.png" alt="Carl Bruce Logo" />
+    <div class="loader-text">CARL BRUCE</div>
+    <div class="loader-sub">Feel Confident</div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  </div>
+
+  <!-- ═══ WHATSAPP FLOAT ═══ -->
+  <a class="wa-float" href="https://wa.me/233203534024" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.46.66 4.77 1.8 6.77L2 30l7.44-1.77A13.94 13.94 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.26 18.86c-.34-.17-2.02-1-2.33-1.11-.32-.12-.55-.17-.78.17-.23.34-.9 1.11-1.1 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.7-2.01-1.9-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.39.51-.58.17-.2.23-.34.34-.57.12-.23.06-.43-.03-.6-.09-.17-.78-1.88-1.07-2.57-.28-.68-.57-.58-.78-.59-.2-.01-.43-.01-.66-.01s-.6.09-.91.43c-.32.34-1.2 1.17-1.2 2.85s1.23 3.3 1.4 3.53c.17.23 2.42 3.7 5.87 5.19.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.83 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.32-.23-.66-.4z"/></svg>
+  </a>
+
+  <!-- ═══ ANNOUNCEMENT BAR ═══ -->
+  <div class="announce" role="marquee">
+    <div class="announce-track" aria-hidden="true">
+      <span>FREE SHIPPING ACROSS GHANA</span><span>·</span>
+      <span>NEW ARRIVALS ARE HERE</span><span>·</span>
+      <span>GYE NYAME — AUTHORITY · GREATNESS · CHARISMA</span><span>·</span>
+      <span>CARL BRUCE CLOTHING BRAND — SINCE 2005</span><span>·</span>
+      <span>FREE SHIPPING ACROSS GHANA</span><span>·</span>
+      <span>NEW ARRIVALS ARE HERE</span><span>·</span>
+      <span>GYE NYAME — AUTHORITY · GREATNESS · CHARISMA</span><span>·</span>
+      <span>CARL BRUCE CLOTHING BRAND — SINCE 2005</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo" aria-label="Carl Bruce Home">
+      <img src="images/logo.png" alt="Carl Bruce Logo" width="44" height="44" />
+      <div class="nav-brand">CARL <span>BRUCE</span></div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#new-arrivals">New Arrivals</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-icon" aria-label="Search">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ MOBILE MENU ═══ -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <ul role="list">
+      <li><a href="#collections" class="m-link">Collections</a></li>
+      <li><a href="#new-arrivals" class="m-link">New Arrivals</a></li>
+      <li><a href="#about" class="m-link">About</a></li>
+      <li><a href="#contact" class="m-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero" aria-label="Hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">SS 2026 Collection</p>
+      <h1 class="hero-title">
+        <span class="line">WEAR THE</span>
+        <span class="line accent">CULTURE</span>
+        <span class="line">FEEL CONFIDENT</span>
+      </h1>
+      <p class="hero-sub">Elevated streetwear rooted in African heritage.<br>Since 2005, Carl Bruce. Since forever, Gye Nyame.</p>
+      <div class="hero-cta">
+        <a href="#new-arrivals" class="btn btn-primary">Shop New Arrivals <span aria-hidden="true">↗</span></a>
+        <a href="#collections" class="btn btn-ghost">Explore Collections</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+    <div class="hero-stats" aria-hidden="true">
+      <div class="stat-item"><span class="stat-num">20+</span><span class="stat-label">Pieces</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat-item"><span class="stat-num">Since</span><span class="stat-label">2005</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat-item"><span class="stat-num">100%</span><span class="stat-label">African Pride</span></div>
+    </div>
+  </section>
+
+  <!-- ═══ MARQUEE ═══ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>CARL BRUCE CLOTHING</span><span class="dot">·</span>
+      <span>GYE NYAME</span><span class="dot">·</span>
+      <span>SINCE 2005</span><span class="dot">·</span>
+      <span>FEEL CONFIDENT</span><span class="dot">·</span>
+      <span>AUTHORITY. GREATNESS. CHARISMA. LEADERSHIP. </span><span class="dot">·</span>
+      <span>ACCRA — GHANA</span><span class="dot">·</span>
+      <span>CARL BRUCE CLOTHING</span><span class="dot">·</span>
+      <span>GYE NYAME</span><span class="dot">·</span>
+      <span>SINCE 2005</span><span class="dot">·</span>
+      <span>FEEL CONFIDENT</span><span class="dot">·</span>
+      <span>AUTHORITY. GREATNESS. CHARISMA. LEADERSHIP.</span><span class="dot">·</span>
+      <span>ACCRA — GHANA</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- ═══ COLLECTIONS ═══ -->
+  <section class="collections" id="collections" aria-labelledby="collections-title">
+    <div class="fade-up">
+      <p class="section-label">Curated for You</p>
+      <h2 class="section-title" id="collections-title">Featured<br><em>Collections</em></h2>
+    </div>
+    <div class="collections-grid fade-up">
+
+      <article class="collection-card">
+        <div class="collection-img">
+          <img src="images/h4.png" alt="Gye Nyame Gold Hoodie — front and back view" loading="lazy" />
+          <div class="collection-img-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="collection-info">
+          <span class="collection-tag">New Drop</span>
+          <h3>The Gye Nyame Series</h3>
+          <p>Adinkra symbols on premium heavyweight hoodies</p>
+          <a href="#new-arrivals" class="collection-link">View All
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="collection-card">
+        <div class="collection-img">
+          <img src="images/h3.png" alt="White Hoodie Collection" loading="lazy" />
+          <div class="collection-img-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="collection-info">
+          <span class="collection-tag teal">Signature</span>
+          <h3>Pure White Drop</h3>
+          <p>Clean silhouettes, powerful cultural prints</p>
+          <a href="#new-arrivals" class="collection-link">View All
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="collection-card">
+        <div class="collection-img">
+          <img src="images/t1.png" alt="Copenhagen T-Shirts" loading="lazy" />
+          <div class="collection-img-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="collection-info">
+          <span class="collection-tag gold">Limited</span>
+          <h3>Copenhagen Edition</h3>
+          <p>Varsity graphics, bold statement tees</p>
+          <a href="#new-arrivals" class="collection-link">View All
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══ NEW ARRIVALS ═══ -->
+  <section class="new-arrivals" id="new-arrivals" aria-labelledby="arrivals-title">
+    <div class="fade-up">
+      <p class="section-label">Current Season</p>
+      <h2 class="section-title" id="arrivals-title">New <em>Arrivals</em></h2>
+    </div>
+
+    <div class="arrivals-tabs fade-up" role="tablist" aria-label="Product categories">
+      <button class="tab-btn active" data-tab="all" role="tab" aria-selected="true" aria-controls="tab-all">All</button>
+      <button class="tab-btn" data-tab="hoodies" role="tab" aria-selected="false" aria-controls="tab-hoodies">Hoodies</button>
+      <button class="tab-btn" data-tab="tees" role="tab" aria-selected="false" aria-controls="tab-tees">T-Shirts</button>
+    </div>
+
+    <!-- ALL -->
+    <div class="products-panel active" id="tab-all" role="tabpanel" aria-labelledby="">
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/h1.png" alt="Gye Nyame Hoodie Black Gold" loading="lazy" />
+          <span class="product-badge badge-new">New</span>
+          <div class="quick-add" aria-label="Quick add Gye Nyame Hoodie Black Gold">Quick Add +</div>
+        </div>
+        <div class="product-info">
+          <p class="product-name">Gye Nyame Hoodie — Black/Gold</p>
+          <p class="product-type">Hoodie</p>
+          <p class="product-price">GHS 350</p>
+          <div class="product-colors" aria-label="Available colors">
+            <span class="color-dot" style="background:#111" aria-label="Black"></span>
+            <span class="color-dot" style="background:#c9a227" aria-label="Gold"></span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/h2.png" alt="Gye Nyame Hoodie Black White" loading="lazy" />
+          <span class="product-badge badge-new">New</span>
+          <div class="quick-add">Quick Add +</div>
+        </div>
+        <div class="product-info">
+          <p class="product-name"> CB Gye Nyame Hoodie — White </p>
+          <p class="product-type"> Premium Custom Made Hoodie </p>
+          <p class="product-price">GHS 450</p>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#111"></span>
+            <span class="color-dot" style="background:#fff;border-color:#444"></span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/h4.png" alt="CB Gye Nyame Hoodie Gold Set" loading="lazy" />
+          <span class="product-badge badge-new">New</span>
+          <div class="quick-add">Quick Add +</div>
+        </div>
+        <div class="product-info">
+          <p class="product-name">CB Gye Nyame Hoodie — Gold Set</p>
+          <p class="product-type">Hoodie</p>
+          <p class="product-price">GHS 420</p>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#111"></span>
+            <span class="color-dot" style="background:#c9a227"></span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/h5.png" alt="CB Gye Nyame Hoodie White Set" loading="lazy" />
+          <span class="product-badge badge-new">New</span>
+          <div class="quick-add">Quick Add +</div>
+        </div>
+        <div class="product-info">
+          <p class="product-name">CB Gye Nyame Hoodie — White Set</p>
+          <p class="product-type">Hoodie</p>
+          <p class="product-price">GHS 420</p>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#fff;border-color:#444"></span>
+            <span class="color-dot" style="background:#111"></span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/h7.png" alt="CB Signature Hoodie White" loading="lazy" />
+          <span class="product-badge badge-limited">Limited</span>
+          <div class="quick-add">Quick Add +</div>
+        </div>
+        <div class="product-info">
+          <p class="product-name">CB Signature Hoodie — White</p>
+          <p class="product-type">Hoodie</p>
+          <p class="product-price">GHS 450</p>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#fff;border-color:#444"></span>
+            <span class="color-dot" style="background:#c9a227"></span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/h3.png" alt="Gye Nyame Hoodie White Black" loading="lazy" />
+          <span class="product-badge badge-new">New</span>
+          <div class="quick-add">Quick Add +</div>
+        </div>
+        <div class="product-info">
+          <p class="product-name">Copenhagen Tee — Black</p>
+          <p class="product-type"> Authentic T-shirt</p>
+          <p class="product-price">GHS 180</p>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#fff;border-color:#444"></span>
+            <span class="color-dot" style="background:#111"></span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/t1.png" alt="Copenhagen Tee Black Gold" loading="lazy" />
+          <span class="product-badge badge-new">New</span>
+          <div class="quick-add">Quick Add +</div>
+        </div>
+        <div class="product-info">
+          <p class="product-name">Copenhagen Tee — Black/Gold</p>
+          <p class="product-type">T-Shirt</p>
+          <p class="product-price">GHS 180</p>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#111"></span>
+            <span class="color-dot" style="background:#c9a227"></span>
+            <span class="color-dot" style="background:#9e9e9e"></span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/t2.png" alt="Copenhagen Tee Black Teal" loading="lazy" />
+          <span class="product-badge badge-new">New</span>
+          <div class="quick-add">Quick Add +</div>
+        </div>
+        <div class="product-info">
+          <p class="product-name">Copenhagen Tee — Black/Teal</p>
+          <p class="product-type">T-Shirt</p>
+          <p class="product-price">GHS 200</p>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#111"></span>
+            <span class="color-dot" style="background:#2d7a8a"></span>
+            <span class="color-dot" style="background:#9c27b0"></span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/t3.png" alt="CB Anime Street Tee White" loading="lazy" />
+          <span class="product-badge badge-limited">Limited</span>
+          <div class="quick-add">Quick Add +</div>
+        </div>
+        <div class="product-info">
+          <p class="product-name">CB Anime Street Tee — White</p>
+          <p class="product-type">T-Shirt</p>
+          <p class="product-price">GHS 200</p>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#fff;border-color:#444"></span>
+            <span class="color-dot" style="background:#111"></span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/t4.png" alt="CB Japan Edition Tee" loading="lazy" />
+          <span class="product-badge badge-new">New</span>
+          <div class="quick-add">Quick Add +</div>
+        </div>
+        <div class="product-info">
+          <p class="product-name">CB Japan Edition Tee</p>
+          <p class="product-type">T-Shirt</p>
+          <p class="product-price">GHS 220</p>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#fff;border-color:#444"></span>
+            <span class="color-dot" style="background:#111"></span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/t5.png" alt="CB Mustang Classic Tee" loading="lazy" />
+          <span class="product-badge badge-new">New</span>
+          <div class="quick-add">Quick Add +</div>
+        </div>
+        <div class="product-info">
+          <p class="product-name">CB Mustang Classic Tee</p>
+          <p class="product-type">T-Shirt</p>
+          <p class="product-price">GHS 200</p>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#111"></span>
+            <span class="color-dot" style="background:#fff;border-color:#444"></span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/t6.png" alt="CB Anime Back Print Tee" loading="lazy" />
+          <span class="product-badge badge-limited">Limited</span>
+          <div class="quick-add">Quick Add +</div>
+        </div>
+        <div class="product-info">
+          <p class="product-name">CB Anime Back Print Tee</p>
+          <p class="product-type">T-Shirt</p>
+          <p class="product-price">GHS 220</p>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#111"></span>
+            <span class="color-dot" style="background:#e05a5a"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOODIES -->
+    <div class="products-panel" id="tab-hoodies" role="tabpanel">
+      <div class="product-card"><div class="product-img-wrap"><img src="images/h1.png" alt="Gye Nyame Hoodie Black Gold" loading="lazy"/><span class="product-badge badge-new">New</span><div class="quick-add">Quick Add +</div></div><div class="product-info"><p class="product-name">Gye Nyame Hoodie — Black/Gold</p><p class="product-type">Hoodie</p><p class="product-price">GHS 350</p></div></div>
+      <div class="product-card"><div class="product-img-wrap"><img src="images/h2.png" alt="Gye Nyame Hoodie Black White" loading="lazy"/><span class="product-badge badge-new">New</span><div class="quick-add">Quick Add +</div></div><div class="product-info"><p class="product-name">Gye Nyame Hoodie — Black/White</p><p class="product-type">Hoodie</p><p class="product-price">GHS 350</p></div></div>
+      <div class="product-card"><div class="product-img-wrap"><img src="images/h4.png" alt="CB Gye Nyame Hoodie Gold Set" loading="lazy"/><span class="product-badge badge-new">New</span><div class="quick-add">Quick Add +</div></div><div class="product-info"><p class="product-name">CB Gye Nyame Hoodie — Gold Set</p><p class="product-type">Hoodie</p><p class="product-price">GHS 420</p></div></div>
+      <div class="product-card"><div class="product-img-wrap"><img src="images/h5.png" alt="CB Gye Nyame Hoodie White Set" loading="lazy"/><span class="product-badge badge-new">New</span><div class="quick-add">Quick Add +</div></div><div class="product-info"><p class="product-name">CB Gye Nyame Hoodie — White Set</p><p class="product-type">Hoodie</p><p class="product-price">GHS 420</p></div></div>
+      <div class="product-card"><div class="product-img-wrap"><img src="images/h7.png" alt="CB Signature Hoodie White" loading="lazy"/><span class="product-badge badge-limited">Limited</span><div class="quick-add">Quick Add +</div></div><div class="product-info"><p class="product-name">CB Signature Hoodie — White</p><p class="product-type">Hoodie</p><p class="product-price">GHS 380</p></div></div>
+      <div class="product-card"><div class="product-img-wrap"><img src="images/h3.png" alt="Gye Nyame Hoodie White Black" loading="lazy"/><span class="product-badge badge-new">New</span><div class="quick-add">Quick Add +</div></div><div class="product-info"><p class="product-name">Gye Nyame Hoodie — White/Black</p><p class="product-type">Hoodie</p><p class="product-price">GHS 350</p></div></div>
+    </div>
+
+    <!-- TEES -->
+    <div class="products-panel" id="tab-tees" role="tabpanel">
+      <div class="product-card"><div class="product-img-wrap"><img src="images/t1.png" alt="Copenhagen Tee Black Gold" loading="lazy"/><span class="product-badge badge-new">New</span><div class="quick-add">Quick Add +</div></div><div class="product-info"><p class="product-name">Copenhagen Tee — Black/Gold</p><p class="product-type">T-Shirt</p><p class="product-price">GHS 180</p></div></div>
+      <div class="product-card"><div class="product-img-wrap"><img src="images/t2.png" alt="Copenhagen Tee Black Teal" loading="lazy"/><span class="product-badge badge-new">New</span><div class="quick-add">Quick Add +</div></div><div class="product-info"><p class="product-name">Copenhagen Tee — Black/Teal</p><p class="product-type">T-Shirt</p><p class="product-price">GHS 180</p></div></div>
+      <div class="product-card"><div class="product-img-wrap"><img src="images/t3.png" alt="CB Anime Street Tee White" loading="lazy"/><span class="product-badge badge-limited">Limited</span><div class="quick-add">Quick Add +</div></div><div class="product-info"><p class="product-name">CB Anime Street Tee — White</p><p class="product-type">T-Shirt</p><p class="product-price">GHS 200</p></div></div>
+      <div class="product-card"><div class="product-img-wrap"><img src="images/t4.png" alt="CB Japan Edition Tee" loading="lazy"/><span class="product-badge badge-new">New</span><div class="quick-add">Quick Add +</div></div><div class="product-info"><p class="product-name">CB Japan Edition Tee</p><p class="product-type">T-Shirt</p><p class="product-price">GHS 220</p></div></div>
+      <div class="product-card"><div class="product-img-wrap"><img src="images/t5.png" alt="CB Mustang Classic Tee" loading="lazy"/><span class="product-badge badge-new">New</span><div class="quick-add">Quick Add +</div></div><div class="product-info"><p class="product-name">CB Mustang Classic Tee</p><p class="product-type">T-Shirt</p><p class="product-price">GHS 200</p></div></div>
+      <div class="product-card"><div class="product-img-wrap"><img src="images/t6.png" alt="CB Anime Back Print Tee" loading="lazy"/><span class="product-badge badge-limited">Limited</span><div class="quick-add">Quick Add +</div></div><div class="product-info"><p class="product-name">CB Anime Back Print Tee</p><p class="product-type">T-Shirt</p><p class="product-price">GHS 220</p></div></div>
+    </div>
+  </section>
+
+  <!-- ═══ EDITORIAL ═══ -->
+  <section class="editorial" id="about" aria-labelledby="editorial-quote">
+    <div class="editorial-bg" aria-hidden="true"></div>
+    <div class="editorial-adinkra" aria-hidden="true">ᛤ</div>
+    <div class="editorial-content fade-up">
+      <p class="editorial-quote" id="editorial-quote">"Except for God — Gye Nyame.<br>Authority, Greatness, Charisma &amp; Leadership."</p>
+      <p class="editorial-attr">— Carl Bruce, 2026 Manifesto</p>
+      <a href="https://wa.me/233203534024" target="_blank" rel="noopener" class="btn btn-primary">
+        Order Now via WhatsApp <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <section class="testimonials" aria-labelledby="testimonials-title">
+    <div class="fade-up">
+      <p class="section-label">Word of Mouth</p>
+      <h2 class="section-title" id="testimonials-title">What They<br><em>Say</em></h2>
+    </div>
+    <div class="testimonials-wrap fade-up">
+      <article class="test-card">
+        <div class="test-stars" aria-label="5 stars">★★★★★</div>
+        <p class="test-text">"Carl Bruce changed how I think about streetwear. Every piece carries meaning — like wearing your culture with pride."</p>
+        <div class="test-author"><strong>Kwame Asare</strong><span>Architect, Accra</span></div>
+      </article>
+      <article class="test-card">
+        <div class="test-stars" aria-label="5 stars">★★★★★</div>
+        <p class="test-text">"The Gye Nyame hoodie is a masterpiece. People stop me everywhere asking where it's from. Quality is unmatched."</p>
+        <div class="test-author"><strong>Ama Boateng</strong><span>Creative Director, Kumasi</span></div>
+      </article>
+      <article class="test-card">
+        <div class="test-stars" aria-label="5 stars">★★★★★</div>
+        <p class="test-text">"This hoodie completely upgraded my style. Clean aesthetic with an eye-catching back print."</p>
+        <div class="test-author"><strong>Cece Barnes</strong><span>Stylist, Maryland USA</span></div>
+      </article>
+      <article class="test-card">
+        <div class="test-stars" aria-label="5 stars">★★★★★</div>
+        <p class="test-text">"Premium quality from the fabric to the print. This hoodie deserves a permanent spot in my rotation."</p>
+        <div class="test-author"><strong>Nana Jerkins</strong><span>Loyal Customer, Maryland USA</span></div>
+      </article>
+      <article class="test-card">
+        <div class="test-stars" aria-label="5 stars">★★★★★</div>
+        <p class="test-text">"A brand that treats African heritage like high fashion. Carl Bruce nailed it. Nothing else compares right now."</p>
+        <div class="test-author"><strong>James Elliot</strong><span>Photographer, London</span></div>
+      </article>
+      <article class="test-card">
+        <div class="test-stars" aria-label="5 stars">★★★★★</div>
+        <p class="test-text">"The white hoodie collection is beautiful — premium fit, stunning back print. My wardrobe finally has a centerpiece."</p>
+        <div class="test-author"><strong>Selin Kaya</strong><span>Stylist, Istanbul</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ═══ GALLERY ═══ -->
+  <section class="gallery" id="contact" aria-labelledby="gallery-title">
+    <div class="fade-up">
+      <p class="section-label">Carl Bruce Clothing Brand</p>
+      <h2 class="section-title" id="gallery-title">Follow the<br><em>Journey</em></h2>
+    </div>
+    <div class="gallery-grid fade-up">
+      <div class="gallery-item"><img src="images/h1.png" alt="CB Hoodie" loading="lazy"/><div class="gallery-overlay" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div></div>
+      <div class="gallery-item"><img src="images/t6.png" alt="CB Tee" loading="lazy"/><div class="gallery-overlay" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div></div>
+      <div class="gallery-item"><img src="images/h5.png" alt="CB Hoodie" loading="lazy"/><div class="gallery-overlay" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div></div>
+      <div class="gallery-item"><img src="images/t3.png" alt="CB Tee" loading="lazy"/><div class="gallery-overlay" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div></div>
+      <div class="gallery-item"><img src="images/h6.png" alt="CB Hoodie" loading="lazy"/><div class="gallery-overlay" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div></div>
+      <div class="gallery-item"><img src="images/t5.png" alt="CB Tee" loading="lazy"/><div class="gallery-overlay" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div></div>
+      <div class="gallery-item"><img src="images/h2.png" alt="CB Hoodie" loading="lazy"/><div class="gallery-overlay" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div></div>
+      <div class="gallery-item"><img src="images/t4.png" alt="CB Tee" loading="lazy"/><div class="gallery-overlay" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div></div>
+    </div>
+    <div class="gallery-cta fade-up">
+      <a href="https://wa.me/233203534024" target="_blank" rel="noopener" class="btn btn-teal">
+        <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.46.66 4.77 1.8 6.77L2 30l7.44-1.77A13.94 13.94 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.26 18.86c-.34-.17-2.02-1-2.33-1.11-.32-.12-.55-.17-.78.17-.23.34-.9 1.11-1.1 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.7-2.01-1.9-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.39.51-.58.17-.2.23-.34.34-.57.12-.23.06-.43-.03-.6-.09-.17-.78-1.88-1.07-2.57-.28-.68-.57-.58-.78-.59-.2-.01-.43-.01-.66-.01s-.6.09-.91.43c-.32.34-1.2 1.17-1.2 2.85s1.23 3.3 1.4 3.53c.17.23 2.42 3.7 5.87 5.19.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.83 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.32-.23-.66-.4z"/></svg>
+        WhatsApp / Call: +233 20 353 4024
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══ SOCIAL STRIP ═══ -->
+  <div class="social-strip" aria-label="Social media links">
+    <a href="https://www.facebook.com/carlbruceclothingbrand" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+      <div class="social-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></div>
+      Carl Bruce Clothing Brand
+    </a>
+    <a href="https://www.tiktok.com/@carlbruceclothingbrand" target="_blank" rel="noopener" class="social-link" aria-label="TikTok">
+      <div class="social-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.22 8.22 0 004.84 1.55V6.79a4.85 4.85 0 01-1.07-.1z"/></svg></div>
+      @carlbruceclothingbrand
+    </a>
+    <a href="https://www.instagram.com/carlbruceclothingbrand" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+      <div class="social-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+      @carlbruceclothingbrand
+    </a>
+    <a href="https://wa.me/233203534024" target="_blank" rel="noopener" class="social-link wa" aria-label="WhatsApp">
+      <div class="social-icon" style="border-color:#25D366" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 32 32" fill="#25D366"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.46.66 4.77 1.8 6.77L2 30l7.44-1.77A13.94 13.94 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.26 18.86c-.34-.17-2.02-1-2.33-1.11-.32-.12-.55-.17-.78.17-.23.34-.9 1.11-1.1 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.7-2.01-1.9-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.39.51-.58.17-.2.23-.34.34-.57.12-.23.06-.43-.03-.6-.09-.17-.78-1.88-1.07-2.57-.28-.68-.57-.58-.78-.59-.2-.01-.43-.01-.66-.01s-.6.09-.91.43c-.32.34-1.2 1.17-1.2 2.85s1.23 3.3 1.4 3.53c.17.23 2.42 3.7 5.87 5.19.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.83 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.32-.23-.66-.4z"/></svg></div>
+      +233 20 353 4024
+    </a>
+  </div>
+
+  <!-- ═══ NEWSLETTER ═══ -->
+  <section class="newsletter" aria-labelledby="newsletter-title">
+    <h2 id="newsletter-title">STAY IN THE LOOP</h2>
+    <p>First access to new drops, exclusive deals, and the Carl Bruce story.</p>
+    <div class="nl-form" role="form" aria-label="Newsletter signup">
+      <label for="nl-email" class="sr-only">Email address</label>
+      <input class="nl-input" id="nl-email" type="email" placeholder="your@email.com" autocomplete="email" />
+      <button class="nl-btn" type="button" id="nlSubmit">Subscribe</button>
+    </div>
+    <p class="nl-confirm" id="nlConfirm" aria-live="polite"></p>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <div class="logo-wrap">
+          <img src="images/logo.png" alt="Carl Bruce Logo" width="50" height="50" />
+          <div class="footer-brand-name">CARL BRUCE</div>
+        </div>
+        <p class="footer-tagline">Elevated streetwear rooted in African heritage. Premium quality, cultural pride, since 2005.</p>
+        <p class="footer-slogan">Feel Confident.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#new-arrivals">New Arrivals</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#new-arrivals">Hoodies</a></li>
+          <li><a href="#new-arrivals">T-Shirts</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="https://wa.me/233203534024" target="_blank" rel="noopener">Sizing Guide</a></li>
+          <li><a href="https://wa.me/233203534024" target="_blank" rel="noopener">Shipping Info</a></li>
+          <li><a href="https://wa.me/233203534024" target="_blank" rel="noopener">Returns</a></li>
+          <li><a href="https://wa.me/233203534024" target="_blank" rel="noopener">WhatsApp Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/carlbruceclothingbrand" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/carlbruceclothingbrand" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.tiktok.com/@carlbruceclothingbrand" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="https://wa.me/233203534024" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Carl Bruce Clothing Brand. All rights reserved. Since 2005.</p>
+      <nav class="footer-socials" aria-label="Footer social links">
+        <a href="https://www.instagram.com/carlbruceclothingbrand" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="https://www.tiktok.com/@carlbruceclothingbrand" target="_blank" rel="noopener" aria-label="TikTok">TK</a>
+        <a href="https://www.facebook.com/carlbruceclothingbrand" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+        <a href="https://wa.me/233203534024" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
